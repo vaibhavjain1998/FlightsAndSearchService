@@ -83,3 +83,7 @@ const update = async (req, res) => {
         })
     }
 }
+
+module.exports = {
+    create, destroy, get, update
+}
