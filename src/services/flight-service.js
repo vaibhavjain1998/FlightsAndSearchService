@@ -1,9 +1,9 @@
-const { FlightRepository, AirplaneRepositoy } = require('../repository/index');
+const { FlightRepository, AirplaneRepository } = require('../repository/index');
 const { compareTime } = require('../utils/helper');
 class FlightService {
 
     constructor() {
-        this.airplaneRepository = new AirplaneRepositoy();
+        this.airplaneRepository = new AirplaneRepository();
         this.flightRepository = new FlightRepository();
     }
     async createFlight(data) {
